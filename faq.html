@@ -1,0 +1,204 @@
+<html>
+    <head>
+        <title>FaQs</title>
+        <link rel="stylesheet" href="styleee.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <style>
+            *
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f8ff;
+}
+.container{
+    margin: 0 40px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.container h1{
+    color: #333;
+}
+.container .tab{
+    position: relative;
+    background-color: #fff;
+    padding: 20px 20px 20px;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.05);
+    border-radius: 5px;
+    overflow: hidden;
+}
+.container .tab input{
+    appearance: none;
+}
+.container .tab label{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.container .tab label::after{
+    content: '+';
+    position: absolute;
+    right: 20px;
+    font-size: 2em;
+    color: rgba(0,0,0,0.1);
+    transition: transform 1s;
+}
+.container .tab:hover label::after{
+    color: #333;
+}
+.container .tab input:checked ~ label::after{
+    transform: rotate(135deg);
+    color: #fff;
+}
+.container .tab label h2{
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1.25em;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.container .tab input:checked ~ label h3{
+    background: #fff;
+    padding: 2px 10px;
+    color: #333;
+    border-radius: 2px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+.container .tab input:checked ~ label h2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: rgba(255,255,255,0.2);
+    font-size: 8em;
+    justify-content: flex-end;
+    padding: 20px;
+}
+.container .tab:nth-child(2) label h2{
+    background: linear-gradient(135deg,#ff96f9,#c32bac)
+}
+.container .tab:nth-child(3) label h2{
+    background: linear-gradient(135deg,#fd6e6a,#ffc600)
+}
+.container .tab:nth-child(4) label h2{
+    background: linear-gradient(135deg,#ff96f9,#c32bac)
+}
+.container .tab:nth-child(5) label h2{
+    background: linear-gradient(135deg,#fd6e6a,#ffc600)
+}
+.container .tab:nth-child(6) label h2{
+    background: linear-gradient(135deg,#ff96f9,#c32bac)
+}
+.container .tab:nth-child(7) label h2{
+    background: linear-gradient(135deg,#fd6e6a,#ffc600)
+}
+.container .tab label h3{
+    position: relative;
+    font-weight: 500;
+    color: #333;
+    z-index: 10;
+}
+.container .tab .content{
+    max-height: 0;
+    transition: 1s;
+    overflow: hidden;
+}
+.container .tab input:checked ~ .content{
+    max-height: 100vh;
+}
+.container .tab .content p{
+    position: relative;
+    padding: 10px 0;
+    color: #333;
+    z-index: 10;
+}
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Frequently asked Questions?</h1>
+            <div class="tab">
+                <input type="radio" name="acc" id="acc1">
+                <label for="acc1">
+                    <h2>01</h2>
+                    <h3>What are smart cities?</h3>
+                </label><br/>
+                <div class="content">
+                    <p>A smart city is a technologically modern urban area that uses differnt types of electronic methods and sensors to collect specific data. Information gained from that data is used to manage assets,resources and services efficiently; in return,that data is used to improve operations accross the city.</p>
+                </div>
+            </div>
+            <div class="tab">
+                <input type="radio" name="acc" id="acc2">
+                <label for="acc2">
+                    <h2>02</h2>
+                    <h3>What is Urban Development?</h3>
+                </label><br/>
+                <div class="content">
+                    <p>Urban development is development of cities and other urban areas as drivers of economic and social development. Concentration of activities and people brings with it environmental and social challenges which can only be tackled through more sustainable and effective ways of living and working.</p>
+                </div>
+            </div>
+            <div class="tab">
+                <input type="radio" name="acc" id="acc3">
+                <label for="acc3">
+                    <h2>03</h2>
+                    <h3>What is E-Waste?</h3>
+                </label><br/>
+                <div class="content">
+                    <p>E-Waste is electronic products that are unwanted, not working, and nearing or at the end of their "useful life". Computers, televisions, VCRs, stereos,copiers,and fax machines are everyday electronic products.</p>
+                </div>
+            </div>
+            <div class="tab">
+                <input type="radio" name="acc" id="acc4">
+                <label for="acc4">
+                    <h2>04</h2>
+                    <h3>How can technology can help the environment?</h3>
+                </label><br/>
+                <div class="content">
+                    <p>Modern enviromental technology has enabled us to capture this naturally occuring energy and convert it into electricity or useful heat through devices such as solar panels,wind and water turbines, which reflects a highly positive impact of technology on the environment.</p>
+                </div>
+            </div>
+            <div class="tab">
+                <input type="radio" name="acc" id="acc5">
+                <label for="acc5">
+                    <h2>05</h2>&nbsp;&nbsp;
+                    <h3>What are all the projects initiated by<br/>
+                    government of Rajasthan to make Jaipur an Smart City?</h3>
+                </label><br/>
+                <div class="content">
+                    <p>The Jaipur Smart Mission Ltd (JSML) is all set to showcase the status of implementation of various projects and its achievements on the second anniversary (June 25) of Centre’s ambitious Smart Cities Mission project.
+                    JSML has decided to develop model roads in eight bazaars under the smart city project. The JSML has proposed to develop nearly 10km smart road separately in the Walled City area. The estimated cost of the project is Rs 16 crore.
+                    As per the proposal, the road will be equipped with smart facilities such as intelligent passenger system, smart lights, ducting system, bio-toilets, WiFi, etc.
+                    Sources said that JSML has not many achievements to boast of during the ceremony. Smart mobility in the Pink City remains a far cry as JSML has failed to implement proposed projects under the smart city mission.
+                    Out of 10 proposed smart mobility projects, JSML has failed to initiate a single project till date.</p>
+                </div>
+            </div>
+            <div class="tab">
+                <input type="radio" name="acc" id="acc6">
+                <label for="acc6">
+                    <h2>06</h2>
+                    <h3>What is JSML?</h3>
+                </label><br/>
+                <div class="content">
+                    <p>Jaipur Smart City aspires to enhance the quality of life of its citizens, and to leverage its heritage and tourism through innovative and inclusive solutions.
+                    The Smart city mission aims to drive economic growth and improve quality of life through comprehensive work on social, economic, physical and institutional pillars of the city. The focus is on providing clean and sustainable environment and carry out development activities in a way that the city act as a lighthouse to other aspiring cities in the Smart City Mission.
+                    To revamp the living standards of our Citizens, Jaipur Smart City strive for enhancing the city's Infrastructure and Heritage.</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

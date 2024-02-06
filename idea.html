@@ -1,0 +1,333 @@
+<html>
+
+<head>
+    <title>Idea</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #5f1126;
+            font-family: Poppins, sans-serif;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        header {
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 80%;
+            padding: 30px 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 10000;
+        }
+
+        header .logo {
+            color: #fff;
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 2em;
+            /* text-transform: uppercase; */
+            letter-spacing: 2px;
+        }
+
+        header ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header ul li {
+            list-style: none;
+            margin-left: 20px;
+        }
+
+        header ul li a {
+            text-decoration: none;
+            padding: 8px 15px;
+            color: #fff;
+            border-radius: 20px;
+        }
+
+        header ul li a:hover {
+            background: #fff;
+            color: #2b1055;
+        }
+
+        .container {
+            margin: 10px 0 0 250px;
+            padding: 40px;
+            width: 40%;
+            height: 105%;
+            background-color: rgb(255 255 255 / 8%);
+            box-shadow: 0 5px 20px rgb(0 0 0 / 20%);
+            border-radius: 20px;
+            border-bottom: 4px solid #490a1b;
+            border: 1px solid rgb(255 255 255 / 36%);
+        }
+
+        textarea {
+            width: 100%;
+            padding: 12px 0px 0px 10px;
+            border: 1px solid #ccc;
+            border-radius: 2px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+
+        textarea:hover {
+            animation: borderGlow 1.5s ease-in-out infinite;
+        }
+
+        @keyframes borderGlow {
+            0% {
+                border-color: transparent;
+                box-shadow: 0 0 5px #000;
+            }
+
+            50% {
+                border-color: rgb(245, 178, 54);
+                box-shadow: 0 0 20px rgb(245, 163, 57);
+            }
+
+            100% {
+                border-color: transparent;
+                box-shadow: 0 0 5px #000;
+            }
+        }
+
+        .container button {
+            float: right;
+            padding: 10px;
+            margin-bottom: 30px;
+        }
+
+        button {
+            background-color: #fff;
+        }
+
+        button:hover {
+            background-color: rgb(243, 138, 171);
+        }
+
+        .hero {
+            height: 100vh;
+            width: 100%;
+            position: absolute;
+        }
+
+        .hero h1 {
+            text-align: center;
+            padding-top: 80px;
+            font-size: 40px;
+            height: fit-content;
+            color: rgb(12, 97, 208);
+        }
+
+        .slide-row {
+            display: flex;
+            width: 3200px;
+            transition: 0.5s;
+        }
+
+        .slide-col {
+            width: 800px;
+            height: 400px;
+            position: relative;
+        }
+
+        .user-img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+        }
+
+        .user-img img {
+            height: 100%;
+            border-radius: 10px;
+        }
+
+        .user-text {
+            background: #2d3a59;
+            width: 520px;
+            height: 270px;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            border-radius: 10px;
+            color: #d3d4d6;
+            padding: 45px;
+            box-sizing: border-box;
+            z-index: 2;
+        }
+
+        .user-text p {
+            font-size: 18px;
+            line-height: 24px;
+        }
+
+        .user-text h3 {
+            margin: 35px 0 5px;
+            color: #fff;
+        }
+
+        .contain {
+            width: 800px;
+            height: 400px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .indicator {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -50%;
+        }
+
+        .btn {
+            display: inline-block;
+            height: 15px;
+            width: 15px;
+            margin: 4px;
+            border-radius: 15px;
+            background: #fff;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+
+        .active {
+            width: 45px;
+        }
+
+        .testimonial {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">UrbanUplift</a>
+        <ul>
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="index.html">Cities</a></li>
+            <li><a href="login.html">Login/SignUp</a></li>
+            <li><a href="faq.html">FaQs</a></li>
+        </ul>
+    </header>
+    <div class="container">
+        <div class="container-1">
+            <h1 style="text-align: center;">Share Your Idea</h1>
+            <textarea placeholder="Write your Idea...." style="height:200px"></textarea>
+        </div>
+        <div class="container-2">
+            <h3 style="text-align: center;">Export File</h3>
+            <label for="files">Select files:</label>
+            <input type="file" id="files" name="files" multiple><br><br>
+        </div>
+        <button type="reset">RESET</button>
+        <button type="button">SUBMIT</button>
+    </div> <br><br><br><br>
+    <h1 style="text-align: center;">Shared ideas by users</h1>
+
+    <div class="hero">
+        <div class="contain">
+            <div class="indicator">
+                <span class="btn active"></span>
+                <span class="btn"></span>
+                <span class="btn"></span>
+                <span class="btn"></span>
+            </div>
+            <div class="testimonial">
+                <div class="slide-row" id="slide">
+                    <div class="slide-col">
+                        <div class="user-text">
+                            <p>Slum areas are increasing day-by-day and it is a big barrier for urban area development. We can do what Singapore did, It developed those proper apartment complexes for people living in poor slumlike conditions. These were built and people were given flats there in exchange for their previous underdeveloped land by the government.</p>
+                            <h3>Sarah</h3>
+                        </div>
+                        <div class="user-img">
+                            <img src="Css/img/female-user-profile-avatar-is-a-woman-a-character-for-a-screen-saver-with-emotions-for-website-and-mobile-app-design-illustration-on-a-white-isolated-background-vector.jpg"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="slide-col">
+                        <div class="user-text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A blanditiis corrupti distinctio perferendis numquam, soluta necessitatibus autem voluptatum ratione amet nam, et quo harum ullam assumenda facilis fugiat deserunt tempore!</p>
+                            <h3>John Doe</h3>
+                        </div>
+                        <div class="user-img">
+                            <img src="Css/img/man-with-beard-avatar-character-isolated-icon-free-vector.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="slide-col">
+                        <div class="user-text">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In eius illum minima officiis
+                                perspiciatis aliquam incidunt accusamus, quos fugit id itaque soluta explicabo
+                                voluptatem tenetur exercitationem, dolorem sint inventore corrupti?</p>
+                            <h3>Joe</h3>
+                        </div>
+                        <div class="user-img">
+                            <img src="Css/img/man-character_665280-46967.avif" alt="">
+                        </div>
+                    </div>
+                    <div class="slide-col">
+                        <div class="user-text">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In eius illum minima officiis
+                                perspiciatis aliquam incidunt accusamus, quos fugit id itaque soluta explicabo
+                                voluptatem tenetur exercitationem, dolorem sint inventore corrupti?</p>
+                            <h3>Smith</h3>
+                        </div>
+                        <div class="user-img">
+                            <img src="Css/img/images.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var btn = document.getElementsByClassName("btn");
+        var slide = document.getElementById("slide");
+
+        btn[0].onclick = function () {
+            slide.style.transform = "translateX(0px)";
+            for (i = 0; i < 4; i++) {
+                btn[i].classList.remove("active");
+            }
+            this.classList.add("active");
+        }
+        btn[1].onclick = function () {
+            slide.style.transform = "translateX(-800px)";
+            for (i = 0; i < 4; i++) {
+                btn[i].classList.remove("active");
+            }
+            this.classList.add("active");
+        }
+        btn[2].onclick = function () {
+            slide.style.transform = "translateX(-1600px)";
+            for (i = 0; i < 4; i++) {
+                btn[i].classList.remove("active");
+            }
+            this.classList.add("active");
+        }
+        btn[3].onclick = function () {
+            slide.style.transform = "translateX(-2400px)";
+            for (i = 0; i < 4; i++) {
+                btn[i].classList.remove("active");
+            }
+            this.classList.add("active");
+        }
+    </script>
+</body>
+
+</html>

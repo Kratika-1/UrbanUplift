@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore:The Pink City</title>
+    <!-- <link rel="stylesheet" href="new.css"> -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            min-height: 100vh;
+            background: #1c0522;
+            overflow-x: hidden;
+            /* overflow: hidden; */
+        }
+
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 30px 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 10000;
+        }
+
+        header .logo {
+            color: #fff;
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 2em;
+            /* text-transform: uppercase; */
+            letter-spacing: 2px;
+        }
+
+        header ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header ul li {
+            list-style: none;
+            margin-left: 20px;
+        }
+
+        header ul li a {
+            text-decoration: none;
+            padding: 8px 15px;
+            color: #fff;
+            border-radius: 20px;
+        }
+
+        header ul li a:hover {
+            background: #fff;
+            color: #2b1055;
+        }
+
+        section>img {
+            mix-blend-mode: color-dodge;
+        }
+
+        .bottom-left {
+            position: absolute;
+            bottom: 200px;
+            left: 150px;
+            color: white;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 1.5em;
+        }
+
+        .grid {
+            display: grid;
+            width: 5rem;
+            grid-gap: 4rem;
+            grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+            align-items: center;
+            margin-left: 100px;
+        }
+
+        @media (max-width: 60em) {
+            .grid {
+                grid-gap: 3rem;
+            }
+        }
+
+        .grid__item {
+            background-color: #fff;
+            border-radius: 0.4rem;
+            overflow: hidden;
+            box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .grid__item:hover {
+            transform: translateY(-0.5%);
+            box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.2);
+        }
+
+        .card__img {
+            display: block;
+            width: 100%;
+            height: 19rem;
+            object-fit: cover;
+        }
+
+        .card__content {
+            padding: 3rem 3rem;
+        }
+
+        .card__header {
+            font-size: 3rem;
+            font-weight: 500;
+            color: #0d0d0d;
+            margin-bottom: 1.5rem;
+        }
+
+        .card__text {
+            font-size: 1rem;
+            letter-spacing: 0.1rem;
+            line-height: 1.7;
+            color: #3d3d3d;
+            margin-bottom: 2.5rem;
+        }
+
+        .card__btn {
+            display: block;
+            width: 50%;
+            padding: 1.5rem;
+            font-size: 2rem;
+            text-align: center;
+            color: #3363ff;
+            background-color: #e6ecff;
+            border: none;
+            border-radius: 0.4rem;
+            transition: 0.2s;
+            cursor: pointer;
+        }
+
+        .card__btn span {
+            margin-left: 1rem;
+            transition: 0.2s;
+        }
+
+        .card_btn:hover,
+        .card_btn:active {
+            background-color: #dce4ff;
+        }
+
+        .card_btn:hover span,
+        .card_btn:active span {
+            margin-left: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">UrbanUplift</a>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="index.html">Cities</a></li>
+            <li><a href="login.html">Login/SignUp</a></li>
+            <li><a href="faq.html">FaQs</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="Css/img/IMG-20231015-WA0062.jpg" alt="">
+        <div class="bottom-left">
+            <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jaipur<br>&nbsp;&nbsp;The Pink Heaven
+            </h2>
+            <p>Blending Modernity With Heritage</p>
+        </div>
+    </section><br><br><br>
+    <h1 style="color: white; font-size: 50px; text-align: center;">What Makes it Smart</h1><br><br><br>
+    <div class="grid">
+        <div class="grid__item">
+            <div class="card"><img class="card__img"
+                    src="Css/img/jaipur-metro.jpg"
+                    alt="">
+                <div class="card__content">
+                    <h1 class="card__header">Transports4All</h1>
+                    <p class="card__text">Jaipur Smart City is participating in “Transport4All- Digital Innovation Challenge”—an initiative of the
+                        Ministry of Housing and Urban Affairs. It aims to bring together cities, citizens, and startups to develop
+                        digital solutions that will make public transport safe, affordable, comfortable, and reliable for all</p>
+                    <button class="card__btn">Learn More <span>&rarr;</span></button>
+                </div>
+            </div>
+        </div>
+        <div class="grid__item">
+            <div class="card"><img class="card__img"
+                    src="Css/img/3junctions.jpg"
+                    alt="">
+                <div class="card__content">
+                    <h1 class="card__header">Three Junctions</h1>
+                    <p class="card__text">Three junctions (Sanganeri Gate, New Gate and Subhash Chowk) are the prominent historical landmarks of
+                        Jaipur. These gates are entry gates of the walled city and unquestionably the centre of attraction for
+                        domestic and foreign tourists.
+                        Jaipur Smart City Limited has taken up the work of conservation, renovation and repair of all these three
+                        junctions of the walled city.
+                        </p>
+                    <button class="card__btn">Learn More <span>&rarr;</span></button>
+                </div>
+            </div>
+        </div>
+        <div class="grid__item">
+            <div class="card"><img class="card__img"
+                    src="Css/img/nalla_redevelopmentshops.jpg"
+                    alt="Canyons">
+                <div class="card__content">
+                    <h1 class="card__header">Nallah Redevelopment (Shops Construction)</h1>
+                    <p class="card__text">From World Trade Park in JLN Marg along Park Avenue Road
+
+                        The vicinity of this location is already a heavy footfall area with place like World Trade Park, Gaurav Tower, and all other malls. This is the reason that the development of shops and interesting sit-out spaces have been proposed for the area. 73 shops has been constructed to be used for commercial purposes.</p>
+                    <button class="card__btn">Learn More <span>&rarr;</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
