@@ -142,19 +142,19 @@ section img#vrBoyImg{
     transform: scale(1.3);
 }
 .box1{
-    background-image: url(img/pexels-shubham-verma-11146084.jpg);
+    background-image: url(pexels-shubham-verma-11146084.jpg);
     background-size: cover;
 }
 .box2{
-    background: url(img/pexels-axp-photography-16738843.jpg);
+    background: url(pexels-axp-photography-16738843.jpg);
     background-size: cover;
 }
 .box3{
-    background: url(img/pexels-hemant-singh-chauhan-17547457.jpg);
+    background: url(pexels-hemant-singh-chauhan-17547457.jpg);
     background-size: cover;
 }
 .box4{
-    background: url(img/115699252_3100870453345560_6106191683402786147_n.jpg);
+    background: url(115699252_3100870453345560_6106191683402786147_n.jpg);
     background-size: cover;
 }
 .sec{
@@ -341,28 +341,28 @@ footer .content .top{
   transition: all 0.4s ease;
 }
 .top .media-icons a:nth-child(1){
-  background: url(img/fblogo.jpg);
+  background: url(fblogo.jpg);
   background-size: cover;
 }
 .top .media-icons a:nth-child(1):hover{
     border: 3px solid white;
 }
 .top .media-icons a:nth-child(2){
-  background: url(img/delhi-india-july-25-2023-new-twitter-logo-vector-47926454.jpg);
+  background: url(delhi-india-july-25-2023-new-twitter-logo-vector-47926454.jpg);
   background-size: cover;
 }
 .top .media-icons a:nth-child(2):hover{
     border: 3px solid white;
 }
 .top .media-icons a:nth-child(3){
-    background: url(img/v982-d3-04.jpg);
+    background: url(v982-d3-04.jpg);
     background-size: cover;
 }
 .top .media-icons a:nth-child(3):hover{
     border: 3px solid rgb(241, 6, 170);
 }
 .top .media-icons a:nth-child(4){
-  background: url(img/linkedin-logo-linkedin-symbol-linkedin-icon-free-free-vector.jpg);
+  background: url(linkedin-logo-linkedin-symbol-linkedin-icon-free-free-vector.jpg);
   background-size: cover;
 }
 .top .media-icons a:nth-child(4):hover{
